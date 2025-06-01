@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ - GlowSkin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #D46F4D;
+            text-decoration: none;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0 20px;
+            color: #333;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            color:#D46F4D;
+        }
+
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+            color: #333;
+        }
+
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #f8f8f8;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="acceuil.html" class="logo">Glow<span>Skin</span></a>
+    </header>
+
+    <h1>Foire Aux Questions</h1>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">La livraison est-elle gratuite ?</div>
+            <div class="faq-answer">Oui, chez GlowSkin, la livraison est totalement gratuite, sans minimum d'achat.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Quels sont les délais de livraison ?</div>
+            <div class="faq-answer">Les commandes sont généralement livrées entre 2 à 5 jours ouvrables, selon votre région.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Puis-je retourner un produit si je ne suis pas satisfait(e) ?</div>
+            <div class="faq-answer">Oui, vous avez 14 jours pour nous retourner un produit non utilisé dans son emballage d’origine.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Vendez-vous uniquement des produits naturels ?</div>
+            <div class="faq-answer">Non, GlowSkin est une boutique multi-marques. Nous proposons une sélection variée de produits, naturels ou non, selon les marques disponibles.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment choisir le bon produit pour ma peau ?</div>
+            <div class="faq-answer">Consultez nos recommandations dans les fiches produits ou contactez-nous pour des conseils personnalisés.</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 GlowSkin. Tous droits réservés.
+    </footer>
+
+    <script>
+        const questions = document.querySelectorAll(".faq-question");
+
+        questions.forEach(question => {
+            question.addEventListener("click", () => {
+                question.classList.toggle("active");
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+
+</body>
+</html>

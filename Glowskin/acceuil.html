@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowSkin | Soins de peau naturels et premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Premium -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="acceuil.html" class="logo">Glow<span>Skin</span></a>
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            </div>
+
+            <div class="search-nav-container">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="acceuil.html" class="active">Accueil</a></li>
+                        <li><a href="produit.html">Nos produits</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="àpropos.html">à propos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="user-actions">
+                <a href="compte.html" class="user-icon"><i class="far fa-user"></i></a>
+                <a href="panier.html" class="cart-icon">
+                    <i class="	fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Luxe -->
+    <section class="hero-banner" id="slideshow">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>L'éclat naturel de votre peau</h1>
+            <p class="hero-subtitle">Découvrez notre gamme de soins certifiés bio et cruelty-free</p>
+            <div class="hero-cta">
+                <a href="produit.html" class="primary-btn">Découvrir</a>
+                <a href="#" class="secondary-btn">Diagnostic peau <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Bestsellers Section -->
+    <section class="product-section" id="produits">
+        <div class="section-header">
+            <h2>Nos best-sellers</h2>
+            <p>Les préférés de notre communauté</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <div class="product-badge">TOP VENTE</div>
+                <div class="product-image">
+                    <img src="images/serum.jpg" alt="Sérum Éclat">
+                    <div class="product-actions">
+                        
+                        <button class="add-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Sérum Éclat</h3>
+                    
+                    <p class="product-desc">Sérum vitaminé pour un teint radieux</p>
+                    <div class="product-price">
+                        <span class="current-price">1900 DA</span>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/créme.jpg" alt="Crème Hydratante">
+                    <div class="product-actions">
+                        
+                        <button class="add-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Crème Hydratante</h3>
+                    
+                    <p class="product-desc">Hydratation intense 24h</p>
+                    <div class="product-price">
+                        <span class="current-price">900 DA</span>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <div class="product-badge">NOUVEAUTÉ</div>
+                <div class="product-image">
+                    <img src="images/gel.jpg" alt="Gel Nettoyant">
+                    <div class="product-actions">
+                       
+                        <button class="add-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Gel Nettoyant</h3>
+                   
+                    <p class="product-desc">Nettoyage doux sans agression</p>
+                    <div class="product-price">
+                        <span class="current-price">1200 DA</span>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/masque.jpg" alt="Masque Purifiant">
+                    <div class="product-actions">
+                        
+                        <button class="add-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Masque Purifiant</h3>
+                    
+                    <p class="product-desc">Purifie et resserre les pores</p>
+                    <div class="product-price">
+                        <span class="current-price">2100 DA</span>
+                    </div>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-footer">
+            <a href="produit.html" class="view-all-btn">Voir toute la collection <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Valeurs Section -->
+   <section class="values-section">
+  <div class="values-container">
+
+    <div class="value-card">
+      <div class="value-icon">
+        <i class="fas fa-shipping-fast"></i>
+      </div>
+      <h3>Livraison fiable</h3>
+      <p>Recevez votre commande en 2 à 5 jours ouvrables.</p>
+    </div>
+
+    <div class="value-card">
+      <div class="value-icon">
+        <i class="fas fa-hand-holding-usd"></i>
+      </div>
+      <h3>Paiement à la livraison</h3>
+      <p>Payez en toute sécurité à la réception de votre colis.</p>
+    </div>
+
+    <div class="value-card">
+      <div class="value-icon">
+        <i class="fas fa-smile-beam"></i>
+      </div>
+      <h3>Satisfait ou remboursé</h3>
+      <p>Retour sous 14 jours si vous changez d’avis.</p>
+    </div>
+
+    <div class="value-card">
+      <div class="value-icon">
+        <i class="fas fa-headset"></i>
+      </div>
+      <h3>Support client</h3>
+      <p>Notre équipe vous répond rapidement, 6j/7.</p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Footer Premium -->
+    <footer class="premium-footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Glow<span>Skin</span></a>
+                    <p>GlowSkin redéfinit les soins de la peau avec des produits naturels, efficaces et respectueux de votre épiderme.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/?locale=fr_FR"><i class="fab fa-facebook-f"></i></a>
+                
+                        <a href="https://www.tiktok.com/fr/"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Boutique</h4>
+                    <ul>
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Best-sellers</a></li>
+                        <li><a href="#">Soins visage</a></li>
+                        <li><a href="#">Soins corps</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Informations</h4>
+                    <ul>
+                       
+                       <li><a href="àpropos.html">à propos</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                      
+                    </ul>
+                </div>
+
+                
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">CGV</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Cookies</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 GlowSkin. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
